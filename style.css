@@ -1,0 +1,513 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+:root {
+	--text: #000;
+	--text2: #fff;
+	--text3: rgb(87,87,87);
+	
+	--blue-black: rgb(25, 127, 196);
+	--blue: rgb(29, 155, 240);
+	--blue-hover: rgb(29, 155, 240, .1);
+	--eee-hover: rgb(15,20,25,.1);
+	--hover-white: rgb(239,243,244);
+	--red: rgb(249, 24, 128);
+	--red-hover: rgba(249, 24, 129, .1);
+}
+body {
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	
+}
+nav {
+	width: 300px;
+	height: 100vh;
+	border-right: 1px solid #eee;
+	padding-left: 15px;
+	
+}
+main {
+	width: 600px;
+	border-right: 1px solid #eee;
+}
+aside {
+	width: 330px;
+	position: sticky;
+	top: 0;
+}
+.content-nav {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+}
+.logo {
+	padding: 12px 22px;
+}
+.logo svg {
+	width: 30px;
+	height: 30px;
+}
+.logo a {
+	width: 50px;
+	height: 50px;
+	
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logo a:hover {
+	background-color: var(--blue-hover);
+}
+svg {
+	width: 20px;
+	height: 20px;
+}
+.sect-bowl {
+	margin-top: 10px;
+}
+.list-menu {
+	list-style: none;
+}
+.list-menu li {
+	padding: 4px 18px;
+	display: flex;
+}
+.line-menu {
+	display: flex;
+	align-items: center;
+	padding: 12px 22px;
+	border-radius: 50px;
+	
+}
+.line-menu:hover {
+	background-color: var(--eee-hover);
+}
+.list-menu li a {
+	text-decoration: none;
+	color: var(--text);
+}
+.list-menu li span {
+	margin-left: 8px;
+	font-size: 1.3rem;
+}
+.list-menu li svg {
+	width: 22px;
+	height: 22px;
+	fill: rgb(43,43,43);
+	
+}
+.btn-tweet {
+	padding: 12px 22px;
+}
+.btn-tweet button {
+	background-color: var(--blue);
+	width: 180px;
+	height: 50px;
+	outline: none;
+	border: none;
+	border-radius: 50px;
+	color: var(--text2);
+	font-size: 1.4;
+	font-weight: 600;
+	cursor: pointer;
+}
+.btn-tweet button:hover {
+	background-color: var(--blue-black);
+}
+.circle {
+	width: 40px;
+	height: 40px;
+	background-color: gray;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.info-profile {
+	display: flex;
+	align-items: center;
+	
+}
+.avatar-profile img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.card-my-profile {
+	margin-top: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	border-radius: 50px;
+	width: 90%;
+	cursor: pointer;
+	padding-bottom: 15px;
+}
+.card-my-profile:hover {
+	background-color: var(--eee-hover);
+}
+.info-names {
+	margin-left: 7px;
+}
+.info-names .fullname {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.info-names .usernames {
+	display: block;
+	font-size: .9rem;
+}
+
+.more-option svg {
+	width: 20px;
+	height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*aside styling*/
+.content-aside {
+	width: 90%;
+	margin: 0 auto;
+}
+.bowl-search {
+	background: var(--hover-white);
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	height: 45px;
+	border-radius: 50px;
+	margin-top: 15px;
+	position: sticky;
+	top: 0;
+}
+.icon-search {
+	width: 50px;
+	display: flex;
+	width: 20px;
+	align-items: center;
+	justify-content: center;
+	margin-left: 20px;
+	padding-right: 2px;
+}
+.icon-search svg {
+	width: 20px;
+	height: 20px;
+	
+}
+.input-search input{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	border: none;
+	background: transparent;
+	font-size: 1.1rem;
+	padding-left: 2px;
+}
+.top-hashtags {
+	padding: 6px;
+	margin-top: 20px;
+}
+.title-top-hash {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 700;
+	font-size: 1.4rem;
+}
+.setting-top-hash {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.setting-top-hash svg {
+	width: 20px;
+	height: 20px;
+}
+.setting-top-hash:hover {
+	background-color: var(--eee-hover);
+}
+
+.card-hashtag {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 6px 15px;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+.card-hashtag:hover {
+	background-color: var(--eee-hover);
+}
+.name-hash .name {
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+.name-hash .count-posted {
+	margin-top: 2px;
+	display: block;
+	font-size: .8rem;
+	font-weight: bold;
+	color: #536471;
+}
+.icon-show-more {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+}
+.icon-show-more:hover {
+	background-color: var(--blue-hover);
+}
+.icon-show-more svg {
+	width: 20px;
+	height: 20px;
+	fill: var(--text);
+}
+.line-see-more {
+	padding: 10px;
+}
+.line-see-more:hover {
+	background-color: var(--eee-hover);
+}
+.line-see-more a {
+	text-decoration: none;
+	color: var(--blue);
+}
+.random-users {
+	margin-top: 10px;
+}
+.title-random-users {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+.bowl-cards-users {
+	margin-top: 7px;
+}
+.avatar-user-card img {
+	
+}
+.card-user-random {
+	margin-top: 5px;
+	padding: 5px;
+	
+	border-radius: 3px;
+}
+.card-user-random:hover {
+	background-color : var(--eee-hover);
+}
+.card-user-random a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: var(--text);
+	justify-content: space-between;
+}
+.info-personal {
+	margin-left: 10px;
+	font-size: 1.1rem;
+}
+.info-card-user {
+	display: flex;
+}
+.info-personal .username {
+	display: block;
+}
+.btn-to-follow button {
+	background: var(--text);
+	color: var(--text2);
+	padding: 5px 10px;
+	font-size: 1.1rem;
+	border-radius: 50px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+/*main styling*/
+.top-home {
+	background-color: #fff;
+	position: sticky;
+	top: 0;
+	display: flex;
+	height: 50px;
+	border-bottom: 1px solid rgb(219,219,219);
+}
+.top-home a {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	color: var(--text);
+	font-size: 1.4rem;
+	font-weight: 600;
+	text-decoration: none;
+}
+.btn-go-top {
+	right: 5px;
+	top: 3px;
+	position: absolute;
+	right: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+.btn-go-top:hover {
+	background-color: #eee;
+}
+.btn-go-top svg {
+	height: 25px;
+	width: 25px;
+	
+}
+.wrapper-make-tweet {
+	margin-top: 20px;
+	display: flex;
+}
+
+.bowl-avatar {
+	width: 50px;
+	height: 50px;
+	padding: 7px;
+}
+.icon-tool-tweet svg{
+	width: 25px;
+	height: 25px;
+	fill: var(--blue);
+	padding: 3px;
+	
+}
+.icon-tool-tweet {
+	display: flex;
+	align-items: center;
+	width: 35px;
+	height: 35px;
+	margin-right: 3px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.icon-tool-tweet:hover {
+	background-color: var(--blue-hover);
+}
+.bowl-area-text {
+	width: 100%;
+	height: 50px;
+	resize: none;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 1.2rem;
+}
+.bowl-area-text::placeholder {
+	font-size: 1.3;
+	color: var(--text);
+	font-weight: 600;
+}
+.area-text {
+	width: 100%;
+}
+.type-tweet-view {
+	width: 100%;
+	margin-bottom: 5px;
+	display: none;
+}
+type-tweet-view.active {
+	display: flex;
+}
+.bowl-type-people {
+	display: flex;
+	align-items: center;
+	padding: 3px 8px;
+	border-radius: 50px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+.bowl-type-people:hover {
+	background-color: var(--blue-hover);
+}
+.bowl-type-people span {
+	color: var(--blue);
+	font-weight: 600;
+	font-size: .9rem;
+}
+.btn-upload {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	justify-content: center;
+}
+.btn-upload svg {
+	width: 20px;
+	height: 20px;
+}
+.tool-for-tweet {
+	display: flex;
+	padding: 10px 5px;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.all-tool-reaction {
+	display: flex;
+	justify-content: space-between;
+}
+.input-upload {
+	display: none;
+}
+.icon-to-tweet {
+	display: flex;
+	align-items: center;
+}
+.icon-to-tweet svg {
+	width: 35px;
+	height: 35px;
+	fill: var(--blue);
+	padding: 3px;
+}
+.btn-publish-tweet button {
+	background-color: var(--blue);
+	padding: 10px 22px;
+	outline: none;
+	border: none;
+	border-radius: 50px;
+	color: var(--text2);
+	font-weight: 600;
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+btn-publish-tweet button:hover {
+	background-color: var(--blue-black);
+}
