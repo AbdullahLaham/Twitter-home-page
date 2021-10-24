@@ -195,8 +195,7 @@ svg {
 	height: 45px;
 	border-radius: 50px;
 	margin-top: 15px;
-	position: sticky;
-	top: 0;
+	
 }
 .icon-search {
 	width: 50px;
@@ -376,10 +375,10 @@ svg {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #eee;
 	height: 40px;
 	width: 40px;
 	border-radius: 50%;
+	cursor: pointer;
 }
 .btn-go-top:hover {
 	background-color: #eee;
@@ -482,10 +481,11 @@ type-tweet-view.active {
 }
 .all-tool-reaction {
 	display: flex;
-	justify-content: space-between;
+	
 }
 .input-upload {
 	display: none;
+	
 }
 .icon-to-tweet {
 	display: flex;
@@ -496,6 +496,9 @@ type-tweet-view.active {
 	height: 35px;
 	fill: var(--blue);
 	padding: 3px;
+}
+.btn-publish-tweet {
+	margin-left: 230px;
 }
 .btn-publish-tweet button {
 	background-color: var(--blue);
@@ -511,3 +514,99 @@ type-tweet-view.active {
 btn-publish-tweet button:hover {
 	background-color: var(--blue-black);
 }
+.wrapper-tweeted {
+	padding: 7px;
+	margin-top: 20px;
+	
+}
+.head-tweeted {
+	display: flex;
+}
+.avatar-user-twtd {
+	margin-top: 15px;
+}
+
+.info-head {
+	padding: 12px;
+}
+.fullname-user-twtd {
+	font-size: 1.4rem;
+	cursor: pointer;
+	font-weight: 600;
+}
+.username-user-twtd {
+	font-size: 1.1rem;
+	margin-top: 5px;
+}
+.time-twtd {
+	font-size: .9rem;
+	margin-left: 5px;
+}
+.text-content-twtd {
+	padding: 8px;
+	font-size: 1.1rem;
+}
+.content-media-twtd img {
+	width: 100%;
+}
+
+.reacted-icon-twtd {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 7px;
+	width: 100%;
+}
+.btn-reacted-icon {
+	display: flex;
+	align-items: center;
+}
+.icon-reacted {
+	width: 33px;
+	height: 33px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.icon-reacted:hover {
+	background-color: var(--blue-hover);
+}
+.icon-reacted:hover svg {
+	fill: var(--blue);
+}
+.icon-reacted svg {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	
+}
+.icon-reacted-love:hover {
+	background-color: var(--red-hover);
+}
+.icon-reacted-love:hover svg{
+	fill: var(--red);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
